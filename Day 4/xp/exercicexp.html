@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Game</title>
+    <link rel="stylesheet" href="exercicexp.css">
+</head>
+<body>
+    <h1>Coloring Squares</h1>
+
+    <div class="toolbar">
+        <button id="clear">Effacer</button>
+        <div class="color-picker">
+            <div class="color red selected" data-color="red"></div>
+            <div class="color blue" data-color="blue"></div>
+            <div class="color green" data-color="green"></div>
+            <div class="color yellow" data-color="yellow"></div>
+            <div class="color purple" data-color="purple"></div>
+            <div class="color black" data-color="black"></div>
+            <div class="color white" data-color="white"></div> <!-- Gomme -->
+        </div>
+    </div>
+
+    <div class="canvas-container">
+        <div class="canvas"></div>
+    </div>
+
+    <script src="exercicexp.js"></script>
+</body>
+</html>
