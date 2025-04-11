@@ -1,0 +1,3 @@
+sourcThis is the source file content.
+It contains multiple lines of text.
+We will copy this content to another file.
