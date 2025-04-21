@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Quotes</title>
+  <style>
+    body {
+      background-color: #1f1f1f;
+      color: white;
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .quote-box {
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #333;
+      width: 60%;
+    }
+
+    .author {
+      color: #00ffcc;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .btn-red { background-color: red; color: white; }
+    .btn-blue { background-color: blue; color: white; }
+    .btn-green { background-color: green; color: white; }
+  </style>
+</head>
+<body>
+
+  <h1>My Quotes</h1>
+  <p>Motivational, Inspirational and more !</p>
+
+  <div class="quote-box">
+    <p id="quote-text">Click "Generate Quote" to begin</p>
+    <p class="author" id="quote-author"></p>
+    <p id="like-count"></p>
+  </div>
+
+  <button onclick="generateQuote()">🎲 Generate Quote</button>
+  <button onclick="countCharacters(true)">🔠 Characters (with spaces)</button>
+  <button onclick="countCharacters(false)">🔡 Characters (no spaces)</button>
+  <button onclick="countWords()">📝 Word Count</button>
+  <button onclick="likeQuote()">❤️ Like</button>
+
+  <hr>
+
+  <h3>Add a Quote</h3>
+  <input type="text" id="new-quote" placeholder="Enter quote">
+  <input type="text" id="new-author" placeholder="Enter author">
+  <button onclick="addQuote()">➕ Add Quote</button>
+
+  <hr>
+
+  <h3>Search by Author</h3>
+  <input type="text" id="search-author" placeholder="Enter author name">
+  <button onclick="filterByAuthor()">🔍 Search</button>
+
+  <div>
+    <button class="btn-red" onclick="prevFiltered()">⬅️ Previous</button>
+    <button class="btn-blue" onclick="nextFiltered()">Next ➡️</button>
+  </div>
+
+  <p id="quote-counter"></p>
+
+  <script src="mini-projet.js"></script>
+</body>
+</html>
