@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .drum-kit {
+    margin-top: 50px;
+  }
+  
+  button.drum {
+    border: none;
+    font-size: 2rem;
+    padding: 20px 30px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #ff5c5c;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+  }
+  
+  button.drum:active {
+    transform: scale(1.1);
+    background-color: #ff1c1c;
+  }
+  
